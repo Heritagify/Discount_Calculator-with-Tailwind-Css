@@ -43,3 +43,15 @@
    </div>
 </body>
 </html>
+<script>
+    // function to make the calculate button work..........
+     calculate=() => {
+        let amount =document.getElementById("amount").value;
+        let percentage =document.getElementById("percentage").value;
+        let discountAmount = document.getElementById("dis-amount");
+        let pay = document.getElementById("pay");
+
+        discountAmount.value = amount * percentage / 100;
+        pay.value = amount - discountAmount.value;
+    }
+</script>
