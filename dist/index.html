@@ -32,7 +32,13 @@
                 <label for="amount">Final pay:</label>
                 <input id="pay" class="bg-transparent border-b border-gray-900 outline-none px-1 text-slate-900" type="number" required>
             </div>
-           
+           <!-- ...........The buttons -->
+           <div class="my-3">
+            <button type="submit" id="CalculateBtn" onclick="calculate()" class="hover:opacity-80 bg-slate-900 py-[0.3rem] w-64 ml-10 text-slate-300 text-sm font-semibold hover:scale-110 rounded-md">Calculate</button>
+        </div>
+        <div class="mb-5">
+            <button type="reset" onclick="resetBtn()" value="reset" class="bg-red-900 w-64 py-[0.3rem] ml-10 text-slate-300 text-sm font-semibold hover:scale-110 rounded-md">Reset</button>
+        </div>
         </div>
    </div>
 </body>
